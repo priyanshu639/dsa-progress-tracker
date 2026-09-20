@@ -596,8 +596,8 @@ export function ProblemsList({ problems }: Props) {
           >
             {patterns.map((item) => (
               <option
-                key={item}
-                value={item}
+                key={item ?? "unknown"}
+                value={item ?? ""}
               >
                 {item === "All"
                   ? "All Patterns"
